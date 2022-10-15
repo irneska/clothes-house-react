@@ -1,0 +1,44 @@
+@font-face {
+    font-family: 'Abhaya-libre';
+    src: url(/src/assets/fonts/abhaya-libre.regular.ttf);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    padding-top: 1vh;
+    display: flex;
+    justify-content: space-between;
+    height: 9vh;
+    padding-inline: 3vw;
+    align-items: center;
+    top: 0;
+    position: sticky;
+    background: #cccccd;
+    margin-bottom: 15vh;
+    z-index: 2;
+}
+
+header p {
+    font-family: 'Abhaya-libre';
+    margin-top: -1vh;
+    font-size: 1.6vw;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+header nav a {
+    font-family: 'Abhaya-libre';
+    margin-top: -1vh;
+    margin-right: 2.5vw;
+    text-decoration: none;
+    color: black;
+    font-size: 1.5vw;
+}

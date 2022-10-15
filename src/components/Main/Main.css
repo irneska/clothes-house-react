@@ -1,0 +1,121 @@
+@font-face {
+    font-family: 'Abhaya-libre';
+    src: url(/src/assets/fonts/abhaya-libre.regular.ttf);
+}
+
+main {
+    background-color: white;
+}
+
+.firstPage {
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 5vw;
+    margin-bottom: 7vh;
+}
+
+.firstPage img {
+    height: 63vh;
+    width: 35vw;
+    position: relative;
+}
+
+main .mainInfo {
+    width: 78vw;
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: black;
+    padding-top: 25vh;
+}
+
+.mainInfo h1 {
+    font-family: 'Abhaya-libre';
+    font-size: 5vw;
+    margin-bottom: 5vh;
+}
+
+.mainInfo h3 {
+    font-family: 'Abhaya-libre';
+    font-size: 2vw;
+}
+
+.secondPage {
+    display: flex;
+    flex-direction: column;
+    height: 110vh;
+    align-items: center;
+}
+
+.clothes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 12vh;
+    height: 75vh;
+    width: 100vw;
+    background-color: #061C95;
+}
+
+.forHim {
+    display: flex;
+    flex-direction: column;
+    margin-right: 12vw;
+    align-items: center;
+    margin-left: 5vw;
+
+}
+
+.forHim img {
+    height: 45vh;
+    width: 35vw;
+    margin-bottom: 2vh;
+}
+
+.forHim p {
+    font-family: 'Abhaya-libre';
+    font-size: 2vw;
+    color: white;
+}
+
+.forHer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.forHer img {
+    height: 45vh;
+    width: 35vw;
+    margin-right: 5vw;
+    margin-bottom: 2vh;
+}
+
+.forHer p {
+    font-family: 'Abhaya-libre';
+    margin-right: 5vw;
+    font-size: 2vw;
+    color: white;
+}
+
+button {
+    font-family: 'Abhaya-libre';
+    height: 6vh;
+    width: 12vw;
+    border-radius: 5vw;
+    border: #061C95 solid;
+    background-color: #061C95;
+    color: white;
+    margin-top: 5vh;
+    font-size: 1.5vw;
+}
+
+button:hover {
+    border: #061C95 solid;
+    background-color: white;
+    color: #061C95;
+    cursor: pointer;
+}
