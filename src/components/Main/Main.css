@@ -11,7 +11,7 @@ main {
     display: flex;
     justify-content: space-between;
     padding-inline: 5vw;
-    margin-bottom: 7vh;
+    margin: 10vh;
 }
 
 .firstPage img {

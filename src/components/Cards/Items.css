@@ -1,0 +1,8 @@
+.cardItems {
+    display: grid;
+    padding: 5vh 7vw;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 5vw;
+    grid-row-gap: 6vh;
+    margin-left: 5vw;
+}

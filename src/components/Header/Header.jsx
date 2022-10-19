@@ -1,13 +1,14 @@
 import './Header.css';
+import { Link } from "react-router-dom";
 
 function Header() {
   return (
     <header>
       <p>CLOTHES HOUSE</p>
       <nav>
-          <a href='/'>Home</a>
-          <a href='/'>Catalog</a>
-          <a href='/'>Cart</a>
+        <Link to='/'> Home </Link>
+        <Link to='/catalog'> Catalog</Link>
+        <Link to='/'> Cart </Link>
       </nav>
     </header>
   )

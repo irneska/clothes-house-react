@@ -1,0 +1,22 @@
+.card {
+    width: 20vw;
+    height: 36vh;
+    margin-bottom: 4vh;
+}
+
+.cardImage {
+    height: 33vh;
+    width: 15vw;
+    margin-bottom: 1.3vh;
+}
+
+.cardInfo {
+    font-family: 'Abhaya-libre';
+    color: black;
+    font-size: 1.6vw;
+    text-decoration: none;
+}
+
+.cardLink {
+    text-decoration: none;
+}
