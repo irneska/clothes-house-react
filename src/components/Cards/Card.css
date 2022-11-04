@@ -6,17 +6,24 @@
 
 .cardImage {
     height: 33vh;
-    width: 15vw;
+    width: 13vw;
     margin-bottom: 1.3vh;
 }
 
 .cardInfo {
     font-family: 'Abhaya-libre';
     color: black;
-    font-size: 1.6vw;
+    font-size: 1.7vw;
     text-decoration: none;
 }
 
 .cardLink {
     text-decoration: none;
 }
+
+.cardInfo p {
+    color: #061C95;
+    font-size: 1.6vw;
+}
+
+

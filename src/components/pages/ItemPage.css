@@ -1,0 +1,49 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Abhaya-libre';
+}
+
+.item {
+    display: flex;
+    flex-direction: row;
+    padding: 10vh 15vw;
+    margin-bottom: 1vh;
+}
+
+img {
+    width: 25vw;
+    height: 60vh;
+}
+
+.itemInfo {
+    margin-left: 7vw;
+}
+
+.itemInfo h2 {
+    font-size: 3vw;
+}
+
+.color {
+    font-size: 1.7vw;
+    margin: 5vh 0vw;
+    color: black;
+}
+
+.price {
+    font-size: 2.3vw;
+    margin-bottom: 3vh;
+    color: #061C95;
+}
+
+.back {
+    margin-left: 2.5vw;
+    border: #061C95 solid;
+    background-color: white;
+    color: #061C95;
+}
+
+.back:hover {
+    background-color: #f0f1fd;
+}

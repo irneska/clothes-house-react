@@ -32,9 +32,9 @@
     border: 0.1vw solid rgb(204, 204, 204);
     height: 5.5vh;
     width: 20vw;
-    margin-right: 3vw;
     padding: 0.2vh 1vw 0.2vh 1.3vw;
     font-size: 1vw;
+    margin-left: 33vw;
 
 }
 
@@ -42,4 +42,13 @@
     width: 10vw;
     height: 5.5vh;
     font-size: 1.3vw;
+}
+
+.cardItems {
+    display: grid;
+    padding: 5vh 7vw;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 5vw;
+    grid-row-gap: 6vh;
+    margin-left: 5vw;
 }

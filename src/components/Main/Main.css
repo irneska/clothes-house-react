@@ -45,7 +45,7 @@ main .mainInfo {
 .secondPage {
     display: flex;
     flex-direction: column;
-    height: 110vh;
+    height: 120vh;
     align-items: center;
 }
 
@@ -118,4 +118,48 @@ button:hover {
     background-color: white;
     color: #061C95;
     cursor: pointer;
+}
+
+.viewMorePage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.viewMorePage h2 {
+    margin: 5vh;
+    font-size: 2vw;
+}
+
+.viewMorePage h5 {
+    font-size: 1.5vw;
+}
+
+.popularItems {
+    display: flex;
+    flex-direction: row;
+}
+
+.popularItems div p {
+    font-size: 1.8vw;
+}
+
+.popularItems div img {
+    height: 40vh;
+    width: 17vw;
+    margin-bottom: 1vh;
+}
+
+.secondItm {
+    margin-right: 13vw;
+    margin-left: 13vw;
+}
+
+.viewLess {
+    background-color: white;
+    color: #061C95;
+}
+
+.viewLess:hover {
+    background-color: #f0f1fd;
 }
