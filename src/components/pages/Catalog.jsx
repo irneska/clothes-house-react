@@ -1,10 +1,22 @@
 import Items from '../Cards/Items.jsx'
 import './Catalog.css'
-import Clothes from '../models/Clothes.jsx'
 import { useEffect, useState } from 'react'
 import Card from '../Cards/Card.jsx'
+import axios from "axios";
+
 
 function Catalog() {
+  const [loading, setLoading] = useState(true)
+  const [Clothes, setClothers] = useState([])
+
+  useEffect(() => {
+      axios.get('http://localhost:8080/api/clothes/get').then(res => {
+          setClothers(res.data)
+      })
+  }, [])
+  setTimeout(() => {
+    setLoading(false)
+}, 2000)
   const [filtered, setFiltered] = useState(Clothes)
   const [value, setValue] = useState('')
   useEffect(() => {
