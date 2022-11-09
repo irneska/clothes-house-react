@@ -29,29 +29,28 @@ function Main() {
                         <p>FOR HER</p>
                     </div>
                 </div>
+                {show &&
+                    <section className='viewMorePage'>
+                        <h2>THE MOST POPULAR ITEMS</h2>
+                        <div className='popularItems'>
+                            <div className='firstItm'>
+                                <img src={firstItem} alt="item" />
+                                <h5 className='cardText'>Wool jacket-shirt</h5>
+                                <p className='price'>899 UAH</p>
+                            </div>
+                            <div className='secondItm'>
+                                <img src={secondItem} alt="item" />
+                                <h5 className='cardText'>Velor minidress</h5>
+                                <p className='price'>769 UAH</p>
+                            </div>
+                            <div className='thirdItm'>
+                                <img src={thirdItem} alt="item" />
+                                <h5 className='cardText'>Faux fur jacket</h5>
+                                <p className='price'>1299 UAH</p>
+                            </div>
+                        </div>
+                    </section>}
                 <button onClick={() => setShow(!show)}>View more</button>
-                {show && 
-                <section className='viewMorePage'>
-                    <h2>THE MOST POPULAR ITEMS</h2>
-                    <div className='popularItems'>
-                        <div className='firstItm'>
-                            <img src={firstItem} alt="item" />
-                            <h5 className='cardText'>Wool jacket-shirt</h5>
-                            <p className='price'>899 UAH</p>
-                        </div>
-                        <div className='secondItm'>
-                            <img src={secondItem} alt="item" />
-                            <h5 className='cardText'>Velor minidress</h5>
-                            <p className='price'>769 UAH</p>
-                        </div>
-                        <div className='thirdItm'>
-                            <img src={thirdItem} alt="item" />
-                            <h5 className='cardText'>Faux fur jacket</h5>
-                            <p className='price'>1299 UAH</p>
-                        </div>
-                    </div>
-                        <button className='viewLess'>View less</button>
-                </section>}
             </section>
         </main>
 

@@ -45,7 +45,6 @@ main .mainInfo {
 .secondPage {
     display: flex;
     flex-direction: column;
-    height: 120vh;
     align-items: center;
 }
 

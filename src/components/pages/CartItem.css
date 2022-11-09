@@ -1,0 +1,53 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5vw;
+}
+
+.cartItem {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-left: 3vw;
+
+}
+
+.cartItemName {
+    font-size: 1.2vw;
+    width: 15vw;
+    justify-content: center;
+    margin-left: 3vw;
+    color: #061C95
+}
+
+.cartItemImg {
+    height: 10vh;
+    width: 4vw;
+}
+
+.changeCount {
+    width: 15vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-right: 5vw;
+    margin-bottom: 7vh;
+    padding-top: 2vh;
+}
+
+.changeCount button {
+    width: 5vw;
+    height: 5vh;
+    font-size: 1.5vw;
+}
+.removeBtn {
+    font-size: 1.3vw;
+    width: 12vw;
+    height: 6vh;
+    left: 2vw;
+    margin-top: 0.3vh;
+}
+

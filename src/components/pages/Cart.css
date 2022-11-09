@@ -1,0 +1,25 @@
+.cartPage {
+    margin: 2vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+h1 {
+    margin-bottom: 10vh;
+}
+
+.sum {
+    font-size: 1.8vw;
+    margin-top: 10vh;
+}
+
+.boughtItems {
+    font-size: 1.8vw;
+
+}
+
+.backBtn {
+    bottom: 20vh;
+}

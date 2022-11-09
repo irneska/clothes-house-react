@@ -6,7 +6,7 @@ footer {
     align-items: center;
     justify-content: center;
     position: relative;
-    bottom: 0;
+    margin-top: 4vh;
 }
 
 footer img {

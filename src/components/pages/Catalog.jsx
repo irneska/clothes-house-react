@@ -1,22 +1,22 @@
-import Items from '../Cards/Items.jsx'
 import './Catalog.css'
 import { useEffect, useState } from 'react'
 import Card from '../Cards/Card.jsx'
 import axios from "axios";
+import Loader from '../Loader/Loader.jsx';
 
 
 function Catalog() {
   const [loading, setLoading] = useState(true)
-  const [Clothes, setClothers] = useState([])
+  const [Clothes, setClothes] = useState([])
 
   useEffect(() => {
-      axios.get('http://localhost:8080/api/clothes/get').then(res => {
-          setClothers(res.data)
+      axios.get('http://localhost:8080/api/clothes').then(res => {
+          setClothes(res.data)
       })
   }, [])
   setTimeout(() => {
     setLoading(false)
-}, 2000)
+}, 1000)
   const [filtered, setFiltered] = useState(Clothes)
   const [value, setValue] = useState('')
   useEffect(() => {
@@ -60,6 +60,10 @@ function Catalog() {
       />
   )
   return (
+    <>
+     {loading ?
+     <Loader/>
+     :
     <div>
       <section className='filters'>
         <select className='select_filter' name="prices" id="prices" onChange={() => priceFilter(document.getElementById("prices").options[document.getElementById("prices").selectedIndex].text)}>
@@ -75,7 +79,7 @@ function Catalog() {
           <option value="women">women</option>
         </select>
         <div className='search_catalog'>
-          <button className='catalog_btn'>Apply</button>
+          {/* <button className='catalog_btn'>Apply</button> */}
           <input className='search_input' type="text" name="name" placeholder="Search..." onChange={(event) => setValue(event.target.value)} />
         </div>
       </section>
@@ -83,6 +87,9 @@ function Catalog() {
         {rendered_items_list}
       </div>
     </div>
+
+}
+</>
   )
 }
 

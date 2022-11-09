@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import './Card.css'
 
 function Card(props) {
-    const {path, src, text, price, sex, color, id}  = props
+    const {src, text, price, sex, color, id}  = props
     return (
         <div className="card">
             <Link className='cardLink' to= {"/catalog/item/" + id} state={{image: src, name: text,
